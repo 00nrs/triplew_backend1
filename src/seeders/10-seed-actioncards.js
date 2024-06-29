@@ -1,0 +1,68 @@
+module.exports = {
+  up: (queryInterface) => queryInterface.bulkInsert('ActionCards', [
+    {
+      name: "Anda a Calle 7",
+      roomID: 9,
+      description: "Tu instinto dice que debes ir rápidamente a Calle 7.",
+      createdAt: new Date(),
+      updatedAt: new Date(),
+  },
+  {
+    name: "Anda a Yingo",
+    roomID: 1,
+    description: "Tu instinto dice que debes ir rápidamente a Yingo.",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    name: "Anda a Gran Hermano",
+    roomID: 3,
+    description: "Tu instinto dice que debes ir rápidamente a Gran Hermano.",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    name: "Anda a Vertigo",
+    roomID: 2,
+    description: "Tu instinto dice que debes ir rápidamente a Vertigo.",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    name: "Anda a Chtvnega Noticias",
+    roomID: 4,
+    description: "Tu instinto dice que debes ir rápidamente a Chtvnega Noticias.",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    name: "Anda a Primer Plano",
+    roomID: 5,
+    description: "Tu instinto dice que debes ir rápidamente a Primer Plano.",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    name: "Anda a Tierra Brava",
+    roomID: 6,
+    description: "Tu instinto dice que debes ir rápidamente a Tierra Brava.",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    name: "Anda a Teletón",
+    roomID: 7,
+    description: "Tu instinto dice que debes ir rápidamente a Teletón.",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    name: "Anda a SQP",
+    roomID: 8,
+    description: "Tu instinto dice que debes ir rápidamente a SQP.",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  ]),
+  down: (queryInterface) => queryInterface.bulkDelete('ClueSheets', null, { truncate: true, cascade: true }),
+};
