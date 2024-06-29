@@ -1,0 +1,21 @@
+Crear seeds: yarn sequelize-cli seed:generate --name nombre_del_seed
+Ejecutar seeds: yarn sequelize-cli db:seed:all
+Deshacer seeds: yarn sequelize db:seed:undo:all 
+yarn sequelize db:seed:undo --seed nombre_del_archivo_seed.js
+Hacer migraciones: yarn sequelize-cli db:migrate
+Deshacer migraciones: yarn sequelize-cli db:migrate:undo:all
+
+Para entrar a la base de datos: psql tripleW_development
+Listar las tablas: \dt 
+Ver tabla: SELECT * FROM "Tabla";
+
+Para reiniciar el id de cada tabla (también borra los datos de esta):
+
+TRUNCATE TABLE "Cards" RESTART IDENTITY CASCADE;
+TRUNCATE TABLE "Users" RESTART IDENTITY CASCADE;
+TRUNCATE TABLE "Weapons" RESTART IDENTITY CASCADE;
+TRUNCATE TABLE "Characters" RESTART IDENTITY CASCADE;
+TRUNCATE TABLE "ClueSheets" RESTART IDENTITY CASCADE;
+TRUNCATE TABLE "Rooms" RESTART IDENTITY CASCADE;
+TRUNCATE TABLE "Players" RESTART IDENTITY CASCADE;
+TRUNCATE TABLE "Games" RESTART IDENTITY CASCADE;
